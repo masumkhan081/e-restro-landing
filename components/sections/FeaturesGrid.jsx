@@ -13,9 +13,7 @@ export default function FeaturesGrid() {
       <Container>
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
-            <Badge variant="outline" className="bg-surface">
-              {features.badge}
-            </Badge>
+            
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-fg sm:text-4xl">
               {features.title.before}{" "}
