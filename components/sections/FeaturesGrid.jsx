@@ -19,7 +19,7 @@ export default function FeaturesGrid() {
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-fg sm:text-4xl">
               {features.title.before}{" "}
-              <span className="text-accent">{features.title.highlight}</span>
+              {features.title.highlight}
             </h2>
 
             <p className="mt-3 text-base text-muted">{features.subtitle}</p>

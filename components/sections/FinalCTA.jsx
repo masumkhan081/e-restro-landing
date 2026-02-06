@@ -10,20 +10,29 @@ export default function FinalCTA() {
   return (
     <Section id="contact" className="border-t border-border">
       <Container>
-        <Card className="p-6 sm:p-8 lg:p-10">
-          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-            <div className="max-w-2xl">
-              <h2 className="text-2xl font-bold tracking-tight text-fg sm:text-3xl">
-                {finalCta.title}
-              </h2>
-              <p className="mt-2 text-base text-muted">{finalCta.subtitle}</p>
-            </div>
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-fg sm:text-4xl">
+            {finalCta.title}
+          </h2>
+          <p className="mt-4 text-base text-muted sm:text-lg">{finalCta.subtitle}</p>
 
-            <a href={finalCta.cta.href}>
-              <Button size="lg">{finalCta.cta.label}</Button>
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+            {finalCta.buttons.map((btn) => (
+              <a key={btn.label} href={btn.href}>
+                <Button size="lg">{btn.label}</Button>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 text-sm text-muted">
+            <a href={`tel:${finalCta.contact.phone}`} className="hover:text-fg">
+              {finalCta.contact.phone}
+            </a>
+            <a href={`mailto:${finalCta.contact.email}`} className="hover:text-fg">
+              {finalCta.contact.email}
             </a>
           </div>
-        </Card>
+        </div>
       </Container>
     </Section>
   );

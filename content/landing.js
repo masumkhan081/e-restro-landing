@@ -28,8 +28,7 @@ export const landingContent = {
       primary: { label: "Get Started", href: "#pricing" },
       secondary: { label: "Book a Demo", href: "#contact" },
     },
-    // set later
-    mockupImage: { src: "/images/mockup.png", alt: "Product dashboard" },
+    mockupImage: { src: "/images/pos2.jpeg", alt: "Restaurant POS System" },
   },
 
   features: {
@@ -58,7 +57,7 @@ export const landingContent = {
         title: "Elegant Table Service",
         bullets: ["Reservations", "Course timing", "Staff roles & shifts"],
         ctaLabel: "View Layout",
-        previewTone: "b",
+        imageIndex: 1,
       },
       {
         id: "fast-food",
@@ -66,7 +65,7 @@ export const landingContent = {
         title: "Speed-First Counter",
         bullets: ["Quick orders", "Kitchen display", "Combo pricing"],
         ctaLabel: "View Layout",
-        previewTone: "a",
+        imageIndex: 2,
       },
       {
         id: "cafe",
@@ -74,7 +73,7 @@ export const landingContent = {
         title: "Coffee & Bakery",
         bullets: ["Variants & add-ons", "Loyalty points", "Pickup flow"],
         ctaLabel: "View Layout",
-        previewTone: "c",
+        imageIndex: 3,
       },
       {
         id: "cloud-kitchen",
@@ -82,7 +81,7 @@ export const landingContent = {
         title: "Delivery Optimized",
         bullets: ["Multi-channel orders", "Prep timers", "Rider handoff"],
         ctaLabel: "View Layout",
-        previewTone: "d",
+        imageIndex: 4,
       },
       {
         id: "bar",
@@ -90,7 +89,7 @@ export const landingContent = {
         title: "Drinks & Tabs",
         bullets: ["Open tabs", "Split bills", "Happy-hour pricing"],
         ctaLabel: "View Layout",
-        previewTone: "e",
+        imageIndex: 5,
       },
       {
         id: "buffet",
@@ -98,13 +97,12 @@ export const landingContent = {
         title: "High Volume",
         bullets: ["Seat tracking", "Token system", "Peak-hour insights"],
         ctaLabel: "View Layout",
-        previewTone: "f",
+        imageIndex: 6,
       },
     ],
   },
 
-  pricing: {
-    badge: "Simple Pricing",
+  pricing: { 
     title: "Choose Your Perfect Plan",
     packages: [
       {
@@ -163,9 +161,16 @@ export const landingContent = {
   },
 
   finalCta: {
-    title: "Ready to transform your restaurant?",
-    subtitle: "Get started today and streamline your operations.",
-    cta: { label: "Call Us Today", href: "#contact" },
+    title: "Ready to Transform Your Restaurant?",
+    subtitle: "Join hundreds of restaurants already using e-restro to streamline their operations and boost their sales.",
+    buttons: [
+      { label: "Get Started Now", href: "#pricing" },
+      { label: "Book a Demo", href: "#contact" },
+    ],
+    contact: {
+      phone: "+44 123 456 7890",
+      email: "hello@e-restro.com",
+    },
   },
 
   footer: {

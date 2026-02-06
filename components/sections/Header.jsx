@@ -8,8 +8,8 @@ import { landingContent } from "@/content/landing";
 
 function BrandMark() {
   return (
-    <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand text-brand-fg shadow-sm">
-      <span className="text-sm font-bold">e</span>
+    <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand text-brand-fg shadow-sm">
+      <span className="text-lg font-bold">e</span>
     </span>
   );
 }
@@ -59,7 +59,7 @@ export default function Header() {
       <Container className="flex h-16 items-center justify-between gap-4">
         <a href={header.brand.href} className="flex items-center gap-3">
           <BrandMark />
-          <span className="text-base font-semibold text-fg">{header.brand.name}</span>
+          <span className="text-lg font-bold text-fg">{header.brand.name}</span>
         </a>
 
         {/* Desktop nav */}
@@ -74,16 +74,6 @@ export default function Header() {
             </a>
           ))}
         </nav>
-
-        {/* Right actions (desktop) */}
-        <div className="hidden items-center gap-3 md:flex">
-          <a href={header.signIn.href} className="text-sm font-medium text-muted hover:text-fg">
-            {header.signIn.label}
-          </a>
-          <a href={header.ctaRight.href}>
-            <Button size="sm">{header.ctaRight.label}</Button>
-          </a>
-        </div>
 
         {/* Mobile hamburger */}
         <button

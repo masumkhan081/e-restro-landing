@@ -23,9 +23,9 @@ export default function PricingCard({
   className,
 }) {
   return (
-    <Card className={cn("p-6 sm:p-8", className)}>
+    <Card className={cn("relative flex flex-col h-full p-6 sm:p-8", className)}>
       {popularLabel ? (
-        <div className="mb-4">
+        <div className="absolute right-4 top-4">
           <Badge variant="brand">{popularLabel}</Badge>
         </div>
       ) : null}
@@ -34,7 +34,7 @@ export default function PricingCard({
         <h3 className="text-xl font-bold text-fg">{name}</h3>
       ) : null}
 
-      <div className="mt-4">
+      <div className="mt-2">
         <div className="flex items-baseline gap-2">
           <div className="text-4xl font-bold text-fg sm:text-5xl">{price}</div>
         </div>
@@ -42,17 +42,17 @@ export default function PricingCard({
       </div>
 
       <div className="mt-6">
+        <a href={ctaHref} className="block">
+          <Button className="w-full">{ctaLabel}</Button>
+        </a>
+      </div>
+
+      <div className="mt-6 flex-grow">
         <div className="space-y-3">
           {features.map((feature) => (
             <CheckItem key={feature}>{feature}</CheckItem>
           ))}
         </div>
-      </div>
-
-      <div className="mt-7">
-        <a href={ctaHref} className="block">
-          <Button className="w-full">{ctaLabel}</Button>
-        </a>
       </div>
     </Card>
   );

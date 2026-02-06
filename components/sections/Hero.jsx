@@ -10,9 +10,9 @@ function HeroTitle({ t }) {
   return (
     <h1 className="text-4xl font-bold tracking-tight text-fg sm:text-5xl lg:text-6xl">
       {t.before}{" "}
-      <span className="text-accent">{t.highlight1}</span>{" "}
+      {t.highlight1}{" "}
       {t.middle}{" "}
-      <span className="text-accent-2">{t.highlight2}</span>{" "}
+      {t.highlight2}{" "}
       {t.after}
     </h1>
   );
