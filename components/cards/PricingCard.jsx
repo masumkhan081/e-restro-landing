@@ -15,6 +15,7 @@ function CheckItem({ children }) {
 export default function PricingCard({
   name,
   popularLabel,
+  description,
   price,
   hint,
   features = [],
@@ -25,13 +26,17 @@ export default function PricingCard({
   return (
     <Card className={cn("relative flex flex-col h-full p-6 sm:p-8", className)}>
       {popularLabel ? (
-        <div className="absolute right-4 top-4">
+        <div className="absolute left-1/2 -translate-x-1/2 -top-3">
           <Badge variant="brand">{popularLabel}</Badge>
         </div>
       ) : null}
 
       {name ? (
         <h3 className="text-xl font-bold text-fg">{name}</h3>
+      ) : null}
+
+      {description ? (
+        <p className="mt-2 text-sm text-muted leading-relaxed">{description}</p>
       ) : null}
 
       <div className="mt-2">

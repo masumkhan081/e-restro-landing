@@ -24,7 +24,11 @@ export default function FinalCTA() {
             ))}
           </div>
 
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 text-sm text-muted">
+          {finalCta.contactPrompt && (
+            <p className="mt-8 text-base text-muted">{finalCta.contactPrompt}</p>
+          )}
+
+          <div className="mt-4 flex flex-col items-center justify-center gap-3 text-sm text-muted">
             <a href={`tel:${finalCta.contact.phone}`} className="hover:text-fg">
               {finalCta.contact.phone}
             </a>

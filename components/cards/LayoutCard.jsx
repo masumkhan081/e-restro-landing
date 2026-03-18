@@ -9,6 +9,7 @@ export default function LayoutCard({
   tag,
   title,
   bullets = [],
+  ctaLabel = "View Layout",
   imageIndex = 1, // 1-6 for the image files
   className,
 }) {
@@ -65,7 +66,7 @@ export default function LayoutCard({
             type="button"
             className="w-full cursor-pointer"
           >
-            Preview Layout
+            {ctaLabel}
           </Button>
         </div>
       </div>

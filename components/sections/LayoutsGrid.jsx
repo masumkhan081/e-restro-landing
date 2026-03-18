@@ -28,7 +28,8 @@ export default function LayoutsGrid() {
               tag={l.tag}
               title={l.title}
               bullets={l.bullets}
-              previewTone={l.previewTone || "a"}
+              ctaLabel={l.ctaLabel}
+              imageIndex={l.imageIndex}
             />
           ))}
           </div>

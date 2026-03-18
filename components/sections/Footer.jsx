@@ -45,11 +45,17 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col gap-3 border-t border-border pt-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
-          <div>© {new Date().getFullYear()} {header.brand.name}. All rights reserved.</div>
+          <div>
+            {footer.copyright
+              .replace("{year}", new Date().getFullYear())
+              .replace("{brand}", header.brand.name)}
+          </div>
           <div className="flex gap-4">
-            <a href="#pricing" className="hover:text-fg">Pricing</a>
-            <a href="#features" className="hover:text-fg">Features</a>
-            <a href="#contact" className="hover:text-fg">Contact</a>
+            {footer.bottomNav.map((link) => (
+              <a key={link.label} href={link.href} className="hover:text-fg">
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
       </Container>

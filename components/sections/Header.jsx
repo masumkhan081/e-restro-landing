@@ -14,10 +14,10 @@ function BrandMark() {
   );
 }
 
-function Hamburger({ open }) {
+function Hamburger({ open, menuA11y }) {
   return (
     <span className="relative inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-surface hover:bg-surface-2">
-      <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
+      <span className="sr-only">{open ? menuA11y.close : menuA11y.open}</span>
       <span
         aria-hidden
         className="absolute h-0.5 w-5 bg-fg transition-transform"
@@ -83,7 +83,7 @@ export default function Header() {
           aria-expanded={open}
           aria-controls="mobile-nav"
         >
-          <Hamburger open={open} />
+          <Hamburger open={open} menuA11y={header.menuA11y} />
         </button>
       </Container>
 

@@ -46,6 +46,12 @@ export default function Hero() {
             {hero.subtitle}
           </p>
 
+          {hero.subtitle2 && (
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">
+              {hero.subtitle2}
+            </p>
+          )}
+
           <div className="mt-6 flex flex-wrap gap-2">
             {hero.chips.map((c) => (
               <Chip key={c}>{c}</Chip>
@@ -81,17 +87,21 @@ export default function Hero() {
           </Card>
 
           {/* floating pills */}
-          <div className="pointer-events-none absolute -left-2 top-6 hidden sm:block">
-            <div className="rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-fg shadow-sm">
-              Real-time Sync
+          {hero.floatingPills?.[0] ? (
+            <div className="pointer-events-none absolute -left-2 top-6 hidden sm:block">
+              <div className="rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-fg shadow-sm">
+                {hero.floatingPills[0].text}
+              </div>
             </div>
-          </div>
+          ) : null}
 
-          <div className="pointer-events-none absolute -right-2 bottom-6 hidden sm:block">
-            <div className="rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-fg shadow-sm">
-              Quick Orders
+          {hero.floatingPills?.[1] ? (
+            <div className="pointer-events-none absolute -right-2 bottom-6 hidden sm:block">
+              <div className="rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-fg shadow-sm">
+                {hero.floatingPills[1].text}
+              </div>
             </div>
-          </div>
+          ) : null}
         </div>
       </Container>
     </Section>

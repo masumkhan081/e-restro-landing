@@ -16,6 +16,10 @@ export default function Pricing() {
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-fg sm:text-4xl">
               {pricing.title}
             </h2>
+            
+            {pricing.subtitle && (
+              <p className="mt-3 text-base text-muted">{pricing.subtitle}</p>
+            )}
           </div>
         </Reveal>
 
@@ -26,6 +30,7 @@ export default function Pricing() {
               key={p.name}
               name={p.name}
               popularLabel={p.popularLabel}
+              description={p.description}
               price={p.price}
               hint={p.hint}
               features={p.features}
