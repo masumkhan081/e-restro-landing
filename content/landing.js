@@ -7,7 +7,7 @@ export const landingContent = {
   ],
 
   header: {
-    brand: { name: "e-restro", href: "/" },
+    brand: { name: "e-Restro", href: "/" },
     ctaRight: { label: "Call Us Today", href: "#contact" },
     signIn: { label: "Sign In", href: "#" },
     menuA11y: { open: "Open menu", close: "Close menu" },
@@ -23,7 +23,7 @@ export const landingContent = {
       after: "",
     },
     subtitle:
-      "e-restro is a powerful restaurant POS and management platform designed to help restaurants streamline operations, increase sales, and deliver better customer experiences. Whether you run a fast-food outlet, café, bakery, bar, or full-service restaurant, e-restro provides the tools you need for a digital presence in one easy system.",
+      "e-Restro is a powerful restaurant POS and management platform designed to help restaurants streamline operations, increase sales, and deliver better customer experiences. Whether you run a fast-food outlet, café, bakery, bar, or full-service restaurant, e-Restro provides the tools you need for a digital presence in one easy system.",
     subtitle2:
       "Our modern POS software helps restaurant owners reduce operational complexity, improve efficiency, and grow revenue without any hassle.",
     chips: ["No per-order commission", "Easy to use", "Real-time insights"],
@@ -41,20 +41,20 @@ export const landingContent = {
   features: {
     badge: "Features",
     title: { before: "Powerful Restaurant", highlight: "Management Software" },
-    subtitle: "e-restro combines advanced tools into one complete platform so restaurant owners can manage every part of their business from a single dashboard.",
+    subtitle: "e-Restro combines advanced tools into one complete platform so restaurant owners can manage every part of their business from a single dashboard.",
     items: [
       { title: "Fast & Reliable POS System", description: "Process orders quickly with a lightning-fast point of sale system designed for busy restaurants. The intuitive interface allows staff to complete transactions quickly and accurately.", icon: "⚡" },
       { title: "Smart Order Management", description: "Track every order from the kitchen to the customer. Our system supports dine-in, takeaway, delivery, and online orders, ensuring smooth service during peak hours.", icon: "🍽️" },
       { title: "Sales Analytics & Reporting", description: "Access detailed insights into your restaurant's performance with advanced sales analytics and reporting dashboards that help you make smarter business decisions.", icon: "📊" },
       { title: "Customer Loyalty Programs", description: "Build long-term relationships with your customers through loyalty rewards, promotions, and personalised offers that encourage repeat visits.", icon: "💝" },
-      { title: "Multi-Location Restaurant Management", description: "If you run multiple restaurants, e-restro allows you to manage all locations from a single dashboard. Key benefits include centralised reporting, unified menu management, multi-branch performance tracking, and easy staff and inventory control across locations.", icon: "🏢" },
+      { title: "Multi-Location Restaurant Management", description: "If you run multiple restaurants, e-Restro allows you to manage all locations from a single dashboard. Key benefits include centralised reporting, unified menu management, multi-branch performance tracking, and easy staff and inventory control across locations.", icon: "🏢" },
     ],
   },
 
   whyChoose: {
-    badge: "Why Choose e-restro",
-    title: { before: "Why Restaurants", highlight: "Choose e-restro" },
-    subtitle: "Restaurants choose e-restro because it offers a complete POS and management solution without the hidden costs.",
+    badge: "Why Choose e-Restro",
+    title: { before: "Why Restaurants", highlight: "Choose e-Restro" },
+    subtitle: "Restaurants choose e-Restro because it offers a complete POS and management solution without the hidden costs.",
     items: [
       { text: "No per-order commission fees", icon: "✓" },
       { text: "Easy to use interface for staff", icon: "✓" },
@@ -122,7 +122,7 @@ export const landingContent = {
 
   pricing: { 
     title: "Simple & Transparent Pricing",
-    subtitle: "Choose the plan that fits your restaurant. Whether you need just a website, a POS system, or a complete restaurant solution, e-restro has flexible pricing designed for small restaurants, cafés, and growing food businesses.",
+    subtitle: "Choose the plan that fits your restaurant. Whether you need just a website, a POS system, or a complete restaurant solution, e-Restro has flexible pricing designed for small restaurants, cafés, and growing food businesses.",
     packages: [
       {
         name: "Website Only",
@@ -148,7 +148,6 @@ export const landingContent = {
         hint: "per month",
         features: [
           "Online & offline POS functionality",
-          "Table management",
           "Order processing",
           "Kitchen order management",
           "Sales tracking",
@@ -179,15 +178,55 @@ export const landingContent = {
 
   finalCta: {
     title: "Transform Your Restaurant Operations Today",
-    subtitle: "Join hundreds of restaurants using e-restro restaurant POS software to simplify operations, manage orders efficiently, and increase revenue. Start using a modern restaurant management system built for speed, clarity, and growth.",
-    contactPrompt: "📞 Contact us today to see how e-restro can power your restaurant.",
+    subtitle: "Join hundreds of restaurants using e-Restro restaurant POS software to simplify operations, manage orders efficiently, and increase revenue. Start using a modern restaurant management system built for speed, clarity, and growth.",
+    contactPrompt: "📞 Contact us today to see how e-Restro can power your restaurant.",
     buttons: [
-      { label: "Get Started Now", href: "#pricing" },
-      { label: "Book a Demo", href: "#contact" },
+      { label: "Call Now", href: "tel:+447480213426" },
+      { label: "Book a Demo", href: "#demo-form" },
     ],
     contact: {
-      phone: "+44 123 456 7890",
-      email: "hello@e-restro.com",
+      phones: ["+447480213426", "+447359428317"],
+      email: "hello@erestro.co.uk",
+    },
+    demoForm: {
+      title: "Get a Demo",
+      subtitle:
+        "Share a few details and we will contact you to arrange a tailored demo for your restaurant.",
+      submitLabel: "Request a Demo",
+      fields: [
+        {
+          id: "personName",
+          name: "personName",
+          label: "Person's Name",
+          type: "text",
+          autoComplete: "name",
+          placeholder: "Your full name",
+        },
+        {
+          id: "companyName",
+          name: "companyName",
+          label: "Company Name",
+          type: "text",
+          autoComplete: "organization",
+          placeholder: "Restaurant or company name",
+        },
+        {
+          id: "email",
+          name: "email",
+          label: "Email",
+          type: "email",
+          autoComplete: "email",
+          placeholder: "you@example.com",
+        },
+        {
+          id: "phone",
+          name: "phone",
+          label: "Phone Number",
+          type: "tel",
+          autoComplete: "tel",
+          placeholder: "+44 7XXX XXXXXX",
+        },
+      ],
     },
   },
 

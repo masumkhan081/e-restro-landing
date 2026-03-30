@@ -11,7 +11,7 @@
   --border: 220 13% 91%;
 
   /* brand + accents */
-  --brand: 24 95% 53%;     /* orange */
+  --brand: 0 0% 8%;        /* near-black */
   --brand-fg: 0 0% 100%;
   --accent: 171 77% 33%;   /* teal */
   --accent-2: 262 83% 58%; /* purple */
@@ -20,13 +20,13 @@
   --success: 142 71% 45%;
   --danger: 0 84% 60%;
 
-  /* layout preview palette (edit these values to match screenshot exactly) */
-  --layout-a: 24 95% 53%;    /* orange-ish */
-  --layout-b: 171 77% 33%;   /* teal-ish */
-  --layout-c: 262 83% 58%;   /* purple-ish */
-  --layout-d: 215 90% 60%;   /* blue-ish */
-  --layout-e: 142 71% 45%;   /* green-ish */
-  --layout-f: 340 82% 60%;   /* pink-ish */
+  /* layout preview palette */
+  --layout-a: 0 0% 8%;
+  --layout-b: 0 0% 18%;
+  --layout-c: 0 0% 28%;
+  --layout-d: 0 0% 45%;
+  --layout-e: 0 0% 65%;
+  --layout-f: 0 0% 82%;
 
   /* radii */
   --r-sm: 10px;

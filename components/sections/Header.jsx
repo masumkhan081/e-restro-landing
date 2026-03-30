@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import ModalSheet from "@/components/ui/ModalSheet";
@@ -8,9 +9,14 @@ import { landingContent } from "@/content/landing";
 
 function BrandMark() {
   return (
-    <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand text-brand-fg shadow-sm">
-      <span className="text-lg font-bold">e</span>
-    </span>
+    <Image
+      src="/logo.png/erestro-dark-two-tone.png"
+      alt="e-Restro logo"
+      width={140}
+      height={44}
+      className="h-11 w-auto"
+      priority
+    />
   );
 }
 
@@ -57,9 +63,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur">
       <Container className="flex h-16 items-center justify-between gap-4">
-        <a href={header.brand.href} className="flex items-center gap-3">
+        <a href={header.brand.href} className="flex items-center">
           <BrandMark />
-          <span className="text-lg font-bold text-fg">{header.brand.name}</span>
         </a>
 
         {/* Desktop nav */}

@@ -1,11 +1,16 @@
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import { landingContent } from "@/content/landing";
 
 function BrandMark() {
   return (
-    <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand text-brand-fg shadow-sm">
-      <span className="text-sm font-bold">e</span>
-    </span>
+    <Image
+      src="/logo.png/erestro-dark-two-tone.png"
+      alt="e-Restro logo"
+      width={128}
+      height={40}
+      className="h-10 w-auto"
+    />
   );
 }
 
@@ -17,9 +22,8 @@ export default function Footer() {
       <Container className="py-12">
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <a href={header.brand.href} className="flex items-center gap-3">
+            <a href={header.brand.href} className="flex items-center">
               <BrandMark />
-              <span className="text-base font-semibold text-fg">{header.brand.name}</span>
             </a>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
               {footer.brandText}
