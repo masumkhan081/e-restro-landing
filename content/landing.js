@@ -14,7 +14,7 @@ export const landingContent = {
   },
 
   hero: {
-    trustBadge: "Trusted by 500+ restaurants worldwide",
+    // trustBadge: "Trusted by 500+ restaurants worldwide",
     title: {
       before: "All-in-One Restaurant POS System to",
       highlight1: "Run Your Business",
