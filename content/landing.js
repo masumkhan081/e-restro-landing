@@ -8,7 +8,7 @@ export const landingContent = {
 
   header: {
     brand: { name: "e-Restro", href: "/" },
-    ctaRight: { label: "Call Us Today", href: "#contact" },
+    ctaRight: { label: "Call Now", href: "#contact" },
     signIn: { label: "Sign In", href: "#" },
     menuA11y: { open: "Open menu", close: "Close menu" },
   },

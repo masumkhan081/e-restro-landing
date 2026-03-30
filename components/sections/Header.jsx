@@ -112,14 +112,6 @@ export default function Header() {
           ))}
 
           <div className="pt-3">
-            <a href={header.signIn.href} onClick={close} className="block">
-              <Button variant="outline" className="w-full">
-                {header.signIn.label}
-              </Button>
-            </a>
-          </div>
-
-          <div className="pt-2">
             <a href={header.ctaRight.href} onClick={close} className="block">
               <Button className="w-full">{header.ctaRight.label}</Button>
             </a>
