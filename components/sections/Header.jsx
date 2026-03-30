@@ -93,7 +93,12 @@ export default function Header() {
       </Container>
 
       {/* Mobile sheet */}
-      <ModalSheet open={open} onClose={close} title="Menu">
+      <ModalSheet
+        open={open}
+        onClose={close}
+        title={<BrandMark />}
+        ariaLabel="Navigation menu"
+      >
         <div id="mobile-nav" className="space-y-2">
           {nav.map((item) => (
             <a

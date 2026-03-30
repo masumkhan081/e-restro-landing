@@ -7,6 +7,7 @@ export default function ModalSheet({
   onClose,
   side = "right", // right | left
   title,
+  ariaLabel,
   children,
 }) {
   useEffect(() => {
@@ -41,17 +42,21 @@ export default function ModalSheet({
       <div
         role="dialog"
         aria-modal="true"
-        aria-label={title || "Menu"}
+        aria-label={ariaLabel || "Menu"}
         className="absolute right-0 top-0 z-10 h-full w-full bg-white shadow-xl md:w-[320px] md:max-w-[85vw]"
       >
         <div className="flex items-center justify-between border-b border-border px-4 py-4">
-          <div className="text-sm font-semibold text-fg">{title}</div>
+          <div className="flex items-center">{title}</div>
           <button
             type="button"
             onClick={onClose}
-            className="rounded-lg border border-border bg-surface px-3 py-2 text-sm font-medium text-fg hover:bg-surface-2"
+            aria-label="Close menu"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-surface text-fg hover:bg-surface-2"
           >
-            Close
+            <span aria-hidden className="relative block h-4 w-4">
+              <span className="absolute left-1/2 top-1/2 h-0.5 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-current" />
+              <span className="absolute left-1/2 top-1/2 h-0.5 w-4 -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-current" />
+            </span>
           </button>
         </div>
 
