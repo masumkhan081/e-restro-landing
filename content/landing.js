@@ -120,7 +120,7 @@ export const landingContent = {
     ],
   },
 
-  pricing: { 
+  pricing: {
     title: "Simple & Transparent Pricing",
     subtitle: "Choose the plan that fits your restaurant. Whether you need just a website, a POS system, or a complete restaurant solution, e-Restro has flexible pricing designed for small restaurants, cafés, and growing food businesses.",
     packages: [
@@ -158,7 +158,7 @@ export const landingContent = {
       {
         name: "Complete Restaurant Solution",
         popularLabel: "Most Popular",
-        description: "Best for restaurants that want a fully integrated digital system to manage both online and in-store operations.",
+        description: "Best for restaurants for fully integrated digital system to manage both online and in-store operations.",
         price: "£100",
         hint: "per month • Best Value",
         features: [
