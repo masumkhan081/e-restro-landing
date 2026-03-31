@@ -142,7 +142,6 @@ export const landingContent = {
       },
       {
         name: "POS System (Online & Offline)",
-        popularLabel: "Most Popular",
         description: "A powerful POS system designed for fast and efficient restaurant operations.",
         price: "£50",
         hint: "per month",
@@ -158,6 +157,7 @@ export const landingContent = {
       },
       {
         name: "Complete Restaurant Solution",
+        popularLabel: "Most Popular",
         description: "Best for restaurants that want a fully integrated digital system to manage both online and in-store operations.",
         price: "£80",
         hint: "per month • Best Value",
