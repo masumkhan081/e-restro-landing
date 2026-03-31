@@ -127,7 +127,7 @@ export const landingContent = {
       {
         name: "Website Only",
         description: "Perfect for restaurants that want a professional online presence and online ordering.",
-        price: "£50",
+        price: "£60",
         hint: "per month",
         features: [
           "Professional restaurant website",
@@ -143,7 +143,7 @@ export const landingContent = {
       {
         name: "POS System (Online & Offline)",
         description: "A powerful POS system designed for fast and efficient restaurant operations.",
-        price: "£50",
+        price: "£60",
         hint: "per month",
         features: [
           "Online & offline POS functionality",
@@ -159,7 +159,7 @@ export const landingContent = {
         name: "Complete Restaurant Solution",
         popularLabel: "Most Popular",
         description: "Best for restaurants that want a fully integrated digital system to manage both online and in-store operations.",
-        price: "£80",
+        price: "£100",
         hint: "per month • Best Value",
         features: [
           "Restaurant website",
