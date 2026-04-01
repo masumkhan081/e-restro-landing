@@ -31,7 +31,7 @@ export const landingContent = {
       primary: { label: "Get Started", href: "#pricing" },
       secondary: { label: "Book a Demo", href: "#contact" },
     },
-    mockupImage: { src: "/images/pos2.jpeg", alt: "Restaurant POS System" },
+    mockupImage: { src: "/hero-section-image.jpeg", alt: "Restaurant POS System" },
     floatingPills: [
       { text: "Real-time Sync" },
       { text: "Quick Orders" },

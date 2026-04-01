@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Script from "next/script";
 import Section from "@/components/ui/Section";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
@@ -10,6 +11,7 @@ export default function FinalCTA() {
   const { finalCta } = landingContent;
   const primaryPhone = finalCta.contact.phones[0];
   const [primaryButton] = finalCta.buttons;
+  /* --- Custom form state and handlers (temporarily commented out for Tally integration) ---
   const initialValues = finalCta.demoForm.fields.reduce((acc, field) => {
     acc[field.name] = "";
     return acc;
@@ -41,6 +43,7 @@ export default function FinalCTA() {
 
     window.location.href = `mailto:${finalCta.contact.email}?subject=${subject}&body=${body}`;
   }
+  --- */
 
   return (
     <Section id="contact" className="border-t border-border">
@@ -99,6 +102,7 @@ export default function FinalCTA() {
                 </p>
               </div>
 
+              {/* --- Custom Form React Code (temporarily commented out for Tally integration) ---
               <form className="mt-6" onSubmit={handleSubmit}>
                 <div className="grid gap-4 sm:grid-cols-2">
                   {finalCta.demoForm.fields.map((field) => (
@@ -127,6 +131,20 @@ export default function FinalCTA() {
                   </Button>
                 </div>
               </form>
+              */}
+
+              {/* Tally Embedded Form */}
+              <iframe 
+                data-tally-src="https://tally.so/embed/BzDGKN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                width="100%"
+                height="295"
+                frameBorder="0"
+                marginHeight="0"
+                marginWidth="0"
+                title="Get a Demo"
+                className="mt-6"
+              ></iframe>
+              <Script id="tally-js" src="https://tally.so/widgets/embed.js" strategy="lazyOnload" />
             </div>
           </div>
         </div>

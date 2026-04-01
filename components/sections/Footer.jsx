@@ -5,7 +5,7 @@ import { landingContent } from "@/content/landing";
 function BrandMark() {
   return (
     <Image
-      src="/logo.png/erestro-dark-two-tone.png"
+      src="/logo/erestro-dark-two-tone.png"
       alt="e-Restro logo"
       width={128}
       height={40}
