@@ -56,8 +56,8 @@ export default function FinalCTA() {
             <p className="mt-4 text-base text-muted sm:text-lg">{finalCta.subtitle}</p>
           </div>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            <div className="flex h-full flex-col rounded-2xl border border-border bg-surface p-6 text-center shadow-sm sm:p-8 lg:justify-center lg:text-left">
+          <div className="mt-10 grid gap-6 lg:grid-cols-12 lg:items-start">
+            <div className="flex flex-col rounded-2xl border border-border bg-surface p-6 text-center shadow-sm sm:p-8 lg:col-span-5 lg:sticky lg:top-24 lg:text-left">
               <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
                 <a href={primaryButton.href}>
                   <Button size="lg">{primaryButton.label}</Button>
@@ -91,7 +91,7 @@ export default function FinalCTA() {
 
             <div
               id="demo-form"
-              className="flex h-full flex-col rounded-2xl border border-border bg-surface p-6 shadow-sm sm:p-8"
+              className="flex flex-col rounded-2xl border border-border bg-surface p-6 shadow-sm sm:p-8 lg:col-span-7"
             >
               <div>
                 <h3 className="text-2xl font-bold tracking-tight text-fg">
