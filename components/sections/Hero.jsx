@@ -34,9 +34,11 @@ export default function Hero() {
       <Container className="grid items-center gap-10 lg:grid-cols-2">
         {/* Left */}
         <div>
-          <Badge variant="outline" className="bg-surface">
-            {hero.trustBadge}
-          </Badge>
+          {hero.trustBadge && (
+            <Badge variant="outline" className="bg-surface">
+              {hero.trustBadge}
+            </Badge>
+          )}
 
           <div className="mt-5">
             <HeroTitle t={hero.title} />
@@ -59,11 +61,11 @@ export default function Hero() {
           </div>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <a href={hero.ctas.primary.href}>
-              <Button size="lg">{hero.ctas.primary.label}</Button>
+            <a href={hero.ctas.primary.href} className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-44">{hero.ctas.primary.label}</Button>
             </a>
-            <a href={hero.ctas.secondary.href}>
-              <Button variant="outline" size="lg">
+            <a href={hero.ctas.secondary.href} className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="w-full sm:w-44">
                 {hero.ctas.secondary.label}
               </Button>
             </a>
